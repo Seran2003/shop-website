@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="navbar">
+        <h1>Seran Fashion</h1>
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="home.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contacts</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+    </nav>
+
+    <!--side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="home.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contacts</a></p>
+        </div>
+
+    </div>
+
+    <!--product-->
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="products" id="product">
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2017/11/14/06/15/shirt-2947548_640.jpg" alt=""
+                    class="resized-image">
+                <p>White Shirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/01/34/man-1866574_640.jpg" alt=""
+                    class="resized-image">
+                <p>Black TShirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2016/06/09/08/01/men-1445338_640.jpg" alt=""
+                    class="resized-image">
+                <p>White TShirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2020/12/29/08/03/male-5869656_640.jpg" alt=""
+                    class="resized-image">
+                <p>Black TShirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2024/04/29/04/21/tshirt-8726716_640.jpg" alt=""
+                    class="resized-image">
+                <p> Shaded White TShirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2015/09/01/05/45/stylish-916502_640.jpg" alt=""
+                    class="resized-image">
+                <p>Black Grey Court</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2017/12/07/18/51/happy-3004355_640.jpg" alt=""
+                    class="resized-image">
+                <p>wheat White TShirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2023/04/01/23/53/man-7893263_640.jpg" alt=""
+                    class="resized-image">
+                <p>Black Grey TShirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2018/07/24/09/09/man-3558698_640.jpg" alt=""
+                    class="resized-image">
+                <p>White coloured T-Shirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://cdn.pixabay.com/photo/2022/12/16/22/11/men-7660590_640.jpg" alt=""
+                    class="resized-image">
+                <p>Black T Shirt</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingText">Style Sphere</h2>
+                <p>Explore the latest in style with our footer. Discover trendy and timeless fashion pieces curated to
+                    elevate your wardrobe.</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                </div>
+
+            </div>
+        </div>
+        <p>@fashion class Style Sphere.com</p>
+    </div>
+
+    <!--my js-->
+    <script src="collection.js"></script>
+
+
+</body>
+
+</html>

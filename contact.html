@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Sphere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!--nav bar-->
+<nav class="navbar">
+    <h1>Seran Fashion</h1>
+    <div class="navbar-links">
+      <p class="navbar-link"><a href="home.html">Home</a></p>
+      <p class="navbar-link"><a href="collection.html">Collections</a></p>
+      <p class="navbar-link"><a href="contact.html">Contacts</a></p>
+    </div>
+    <div class="navbar-menu-toggle" onclick="shownavbar()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </nav>
+  
+  <!--side Navbar-->
+  <div class="side-navbar">
+    <p style="text-align: right;" onclick="closenavbar()">
+      <i class="fa-solid fa-xmark"></i>
+    </p>
+    <div class="side-navbar-links">
+      <p class="side-navbar-link"><a href="home.html">Home</a></p>
+      <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+      <p class="side-navbar-link"><a href="contact.html">Contacts</a></p>
+    </div>
+  </div>
+  
+  <!--footer-->
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-box-1">
+        <h2 class="headingText">Style Sphere</h2>
+      </div>
+      <p>Explore the latest in style with our footer. Discover trendy and timeless fashion pieces curated to elevate your wardrobe.</p>
+
+      <h2>Contact Details</h2>
+      <form id="myForm" onsubmit="return validateForm(event)">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+  
+        <label for="number">Number:</label><br>
+        <input type="text" id="number" name="number" pattern="[0-9]{10}" title="Please enter a 10-digit number" required><br><br>
+  
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+  
+        <input type="submit" value="Submit">
+      </form>
+  
+      <div class="message" id="successMessage">
+        Successfully verified!
+      </div>
+  
+      <div class="error-message" id="emailErrorMessage">
+        Please enter a valid email address.
+      </div>
+    </div>
+  
+    <div class="footer-icon-container">
+      <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+    </div>
+  
+    <p>@fashion Style Sphere.com</p>
+  </div>
+  
+  <!--my js-->
+  <script src="contact.js"></script>
+  
+
+</body>
+
+</html>
